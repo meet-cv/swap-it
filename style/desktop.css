@@ -1,0 +1,15 @@
+ @media only screen and (min-width:500px){
+                .game-area{
+                    flex-direction: row;
+                }
+                .controls{
+                    width:30%;
+                    
+                }
+                .game-board{
+                    height:100%;
+                    width:70%;
+                    top:0%;
+                    right:0%;
+                }
+            }
