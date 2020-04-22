@@ -23,7 +23,7 @@ var contentToCache = [
 
 
 self.addEventListener('install',(e)=>{
-   console.log('service worker instl');
+ //  console.log('service worker install');
     e.waitUntil(
         caches.open(cacheName).then((cache)=>{
             console.log('caching all');
@@ -35,10 +35,10 @@ self.addEventListener('install',(e)=>{
 self.addEventListener('fetch', (e) => {
   e.respondWith(
     caches.match(e.request).then((r) => {
-          console.log('Fetching resource: '+e.request.url);
+         // console.log('Fetching resource: '+e.request.url);
       return r || fetch(e.request).then((response) => {
                 return caches.open(cacheName).then((cache) => {
-          console.log('Caching new resource: '+e.request.url);
+          //console.log('Caching new resource: '+e.request.url);
           cache.put(e.request, response.clone());
           return response;
         });

@@ -1,4 +1,9 @@
-  body{
+@media all and (display-mode:fullscreen){
+    .download-btn{
+        display: none;
+    }
+}  
+body{
                 margin:0px;
                 min-height: 100vh;
                 min-width: 100vw;
@@ -21,20 +26,29 @@
             }
             .download-btn{
                 justify-self:end;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-right:5px;
             }
+            .download-btn span{
+                font-family: 'Josefin Sans', sans-serif;
+                margin-top:3px;
+                }
+
             .download-btn img{
                 height: 40px;
                 width: 40px;
-                margin-right:10px;
+                
             }
         .logo{
                 justify-self:start;
                 font-family: 'Josefin Sans', sans-serif;
             font-size: 25px;
             margin-left: 10px;   
-            letter-spacing: 1.2;
             font-weight: 900;
-            }    
+            white-space: nowrap;
+            }  
             .game-area{
                 grid-area: game-area;
                 width:100%;
