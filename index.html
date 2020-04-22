@@ -13,13 +13,15 @@
     <body>
         <header>
             <div class="logo">SWAP IT</div>
+            <span id="score"></span>
             <div class="download-btn" onclick="">
                 <img src="assets/download.svg"/>
             </div>
         </header>
         <div class="game-area">
             <div class="controls">
-                <button class='play-btn' onclick="change();">PLAY</button>
+                <div class='resume-btn' onclick="change('resume');">RESUME</div>
+                <div class='play-btn' onclick="change('play');">NEW GAME</div>
             </div>
             <div class="game-board">
                 <div class="board">

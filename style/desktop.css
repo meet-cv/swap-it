@@ -12,4 +12,16 @@
                     top:0%;
                     right:0%;
                 }
+     .board{
+         grid-template-columns: repeat(3,27vh);
+                grid-template-rows: repeat(3,27vh);
+                grid-column-gap: 5px;
+                grid-row-gap: 5px;
+     }
+     .cell{
+         height:27vh;
+         width:27vh;
+         
+         
+     }
             }
