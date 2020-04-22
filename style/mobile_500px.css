@@ -1,8 +1,12 @@
-@media all and (display-mode:fullscreen){
-    .download-btn{
+    .download-btn:fullscreen{
         display: none;
     }
-}  
+    
+    .download-btn:-webkit-full-screen{
+        display: none;
+    }
+
+  
 body{
                 margin:0px;
                 min-height: 100vh;
