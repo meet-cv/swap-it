@@ -1,22 +1,22 @@
 {
-    "short_name":"Swap IT",
-    "name":"Swap IT",
-    "description":"Simple number puzzel game",
+    "short_name":"SWAP IT",
+    "name":"SWAP IT",
+    "description":"Simple number puzzle game",
     "icons":[
         {
-            "src":"./assets/icons8-home-128.png",
+            "src":"./assets/appicon-128.png",
             "type":"image/png",
             "sizes":"128x128"
         },
         {
-            "src":"./assets/icons8-home-512.png",
+            "src":"./assets/appicon-512.png",
             "type":"image/png",
             "sizes":"512x512"
         }
     ],
     "start_url":"./index.html",
-    "background_color":"#3367D6",
+    "background_color":"#b7efcd",
     "display":"fullscreen",
     "scope":"./",
-    "theme_color":"#3367D6"
+    "theme_color":"#b7efcd"
 }

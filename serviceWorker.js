@@ -13,6 +13,8 @@ var contentToCache = [
   './scripts/init.js',
   './scripts/game.js',    
   './assets/darkmode.svg',
+  './assets/appicon-512.png',
+  './assets/appicon-128.png',
   './assets/darkmode_dark.svg',
   './assets/home.svg',
   './assets/home_dark.svg',
