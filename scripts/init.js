@@ -7,7 +7,7 @@ function init(){
     document.getElementById("score").innerHTML="0";
     document.getElementsByClassName("resume-btn")[0].style.display="block";
     var ele = document.getElementsByClassName('cell');
-    game_state = shuffle(game_state);
+   game_state = shuffle(game_state);
     for(var i=0;i<8;i++){
         ele[i].innerText=game_state[i];  
     }
@@ -27,6 +27,18 @@ function init(){
             
             }
         }
+  }
+  
+ function result(){
+  let cell_no=1;
+  	  for(var i=0;i<3;i++){
+        for(var j=0;j<3;j++){
+                if(cell_state[cell_no][0]!==i || cell_state[cell_no][1]!==j)
+                 return false;
+                cell_no++;
+            }
+        }
+  	return true;
   }
   
                

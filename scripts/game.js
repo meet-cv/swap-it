@@ -39,7 +39,7 @@ function shuffle(a) {
 function move(ele){
     var move_type = check_move(ele.innerText);
     if(move_type!=null){
-        document.getElementById("score").innerHTML=++score;
+    	  document.getElementById("score").innerHTML=++score;
         switch(move_type){
             case "left":
                 cell_state[ele.innerText]["left"]+=move_step;
@@ -59,6 +59,12 @@ function move(ele){
             break;  
             }
         update_state(ele.innerText);
+    		if(result()){
+    				alert("Wooh...You made it in "+score+" moves");
+    				document.getElementsByClassName("resume-btn")[0].style.display="none";
+    				document.getElementById("score").innerHTML="";
+    				setTimeout("home();",1000);
+    		}
     }
 }
 
