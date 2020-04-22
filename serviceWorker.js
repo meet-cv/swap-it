@@ -10,10 +10,13 @@ var contentToCache = [
   './style/components.css',
   './scripts/darkMode.js',
   './scripts/ui.js',
-  './assets/icons8-home.svg',
-  './assets/icons8-home-128.png',
-  './assets/icons8-home-512.png',
-          
+  './scripts/init.js',
+  './scripts/game.js',    
+  './assets/darkmode.svg',
+  './assets/darkmode_dark.svg',
+  './assets/home.svg',
+  './assets/home_dark.svg',
+  './assets/download.svg',
 ];
 
 

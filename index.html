@@ -9,43 +9,43 @@
         <link href="style/mobile_500px.css" rel="stylesheet"/>
         <link href="style/desktop.css" rel="stylesheet"/>
         <link href="style/components.css" rel="stylesheet"/>
-        <script src="app.js"></script>
-        <script src="scripts/darkMode.js"></script>
-    	  <script src="scripts/ui.js"></script>
     </head>
     <body>
         <header>
-            <div class="logo"></div>
-            <div class="toggle-btn" onclick="toggle();">
-                <div class="toggle-bar">
-                    <div class="toggle-slider" ></div>
-                </div>
+            <div class="logo">SWAP IT</div>
+            <div class="download-btn" onclick="">
+                <img src="assets/download.svg"/>
             </div>
         </header>
         <div class="game-area">
             <div class="controls">
-                <button class='play-btn' onclick="change();">Play</button>
-                <button>Timer Mode</button>
-                
+                <button class='play-btn' onclick="change();">PLAY</button>
             </div>
             <div class="game-board">
                 <div class="board">
-                    <div class="cell"><span>1</span></div>
-                    <div class="cell"><span>2</span></div>
-                    <div class="cell"><span>3</span></div>
-                    <div class="cell"><span>4</span></div>
-                    <div class="cell"><span>5</span></div>
-                    <div class="cell"><span>6</span></div>
-                    <div class="cell"><span>7</span></div>
-                    <div class="cell"><span>8</span></div>
-                    <div class="cell"><span>9</span></div>
+                    <div class="cell" onclick="move(this);"><span>1</span></div>
+                    <div class="cell" onclick="move(this);"><span>2</span></div>
+                    <div class="cell" onclick="move(this);"><span>3</span></div>
+                    <div class="cell" onclick="move(this);"><span>4</span></div>
+                    <div class="cell" onclick="move(this);"><span>5</span></div>
+                    <div class="cell" onclick="move(this);"><span>6</span></div>
+                    <div class="cell" onclick="move(this);"><span>7</span></div>
+                    <div class="cell" onclick="move(this);"><span>8</span></div>
+                    <div class="cell"></div>
                 </div>
             </div>
         </div>
         <footer>									
-            <div class="home-btn" onclick="home();"><img src="assets/icons8-home.svg"/></div>					
+            <div class="dark-mode-btn-wrapper" onclick="toggle();"><img id="dark-mode-btn" src="assets/darkmode_dark.svg"/></div>
+            <div class="home-btn-wrapper" onclick="home();"><img id="home-btn" src="assets/home.svg"/></div> 
         </footer>
             <script>
         </script>
+        <script src="app.js"></script>
+        <script src="scripts/darkMode.js"></script>
+        <script src="scripts/ui.js"></script>
+        <script src="scripts/game.js"></script>
+        <script src="scripts/init.js"></script>
+        
     </body>
 </html>
